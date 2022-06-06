@@ -11,7 +11,7 @@ const {
 } = require('../../controllers/thoughts-controller');
 
 router
-  .route('./:thoughtId')
+  .route('/:thoughtId')
   .get(getThoughtById)
   .put(updateThoughtById)
   .delete(deleteThoughtById);
